@@ -9,31 +9,40 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FFD700",
+          "properties": {
+            "text": "{{if .VirtualEnv}}🌐{{end}} "
+          }
+        },
+        {
           "type": "path",
           "style": "plain",
           "foreground": "#FFD700",
           "properties": {
-            "style": "full"
+            "style": "full",
+            "prefix": ""
           }
         },
         {
           "type": "git",
-          "style": "plain",
+          "style": "ascii_logo",
           "foreground": "#FF69B4",
           "properties": {
             "display_status": true,
             "display_stash_count": true,
             "display_upstream_icon": true,
-            "prefix": " \uE702 "
+            "prefix": " 🌱 "
           }
         },
         {
           "type": "language",
-          "style": "plain",
+          "style": "ascii_logo",
           "foreground": "#00FFFF",
           "properties": {
             "display_mode": "always",
-            "prefix": " \uE61E "
+            "prefix": " 📝 "
           }
         }
       ]
@@ -43,12 +52,11 @@
       "alignment": "right",
       "segments": [
         {
-          "type": "executiontime",
+          "type": "dynamic_info",
           "style": "plain",
           "foreground": "#7FFF00",
           "properties": {
-            "postfix": " ms",
-            "threshold": 0
+            "dynamic_text": "{{datetime \"15:04:05\"}} ⚡️"
           }
         }
       ]
