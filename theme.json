@@ -45,9 +45,6 @@
           "type": "executiontime",
           "style": "plain",
           "foreground": "#00FFFF",
-          "properties": {
-            "threshold": 0
-          }
         },
         {
           "type": "time",
