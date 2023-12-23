@@ -52,7 +52,7 @@
         {
           "type": "executiontime",
           "style": "plain",
-          "foreground": "#00FFFF",
+          "foreground": "#00FFFF"
         },
         {
           "type": "time",
