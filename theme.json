@@ -15,7 +15,6 @@
           "foreground": "#FFD700",
           "background": "#000000",
           "properties": {
-            "prefix": " \uE5FF ",
             "style": "full"
           }
         },
@@ -23,8 +22,8 @@
           "type": "git",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#000000",
-          "background": "#FF69B4",
+          "foreground": "#FF69B4",
+          "background": "#000000",
           "properties": {
             "display_status": true,
             "display_stash_count": true,
@@ -36,22 +35,45 @@
           "type": "language",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#000000",
-          "background": "#00FFFF",
+          "foreground": "#00FFFF",
+          "background": "#000000",
           "properties": {
             "display_mode": "always",
             "prefix": " \uE61E "
           }
-        },
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
         {
           "type": "executiontime",
           "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#000000",
-          "background": "#7FFF00",
+          "powerline_symbol": "\uE0B2",
+          "foreground": "#7FFF00",
+          "background": "#000000",
           "properties": {
             "postfix": " ms",
             "threshold": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "newline"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FFD700",
+          "properties": {
+            "text": "\uE0B2 "
           }
         }
       ]
