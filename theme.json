@@ -11,7 +11,7 @@
         {
           "type": "os",
           "style": "plain",
-          "foreground": "#FF00FF",
+          "foreground": "#FF4081",
           "properties": {
             "display_distro_name": true
           }
@@ -19,7 +19,7 @@
         {
           "type": "language",
           "style": "plain",
-          "foreground": "#FF00FF",
+          "foreground": "#40C4FF",
           "properties": {
             "display_mode": "always"
           }
@@ -27,7 +27,7 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#00FF00",
+          "foreground": "#4CAF50",
           "properties": {
             "style": "full"
           }
@@ -41,7 +41,7 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#FFFF00",
+          "foreground": "#FFEB3B",
           "properties": {
             "display_status": true,
             "display_stash_count": true,
@@ -52,12 +52,12 @@
         {
           "type": "executiontime",
           "style": "plain",
-          "foreground": "#00FFFF"
+          "foreground": "#00E676"
         },
         {
           "type": "time",
           "style": "plain",
-          "foreground": "#FF0000",
+          "foreground": "#FF9100",
           "properties": {
             "time_format": "15:04:05",
             "prefix": " \uE868 "
@@ -75,7 +75,7 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#00FF00",
+          "foreground": "#4CAF50",
           "properties": {
             "text": ">> "
           }
