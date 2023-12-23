@@ -23,7 +23,7 @@
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} ",
           "type": "time"
-        },
+        }
       ],
       "type": "prompt"
     },
@@ -49,7 +49,6 @@
             "style": "dallas",
             "threshold": 0
           },
-          "style": "diamond",
           "template": " {{ .FormattedMs }}s <#ffffff>\ue601</>",
           "type": "executiontime"
         }
