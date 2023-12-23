@@ -13,7 +13,7 @@
           "style": "plain",
           "foreground": "#FFD700",
           "properties": {
-            "text": "{{if .VirtualEnv}}🌐{{end}} "
+            "text": "{{if eq .VirtualEnv \"\"}}{{else}}🌐{{end}} "
           }
         },
         {
