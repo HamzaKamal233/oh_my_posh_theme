@@ -9,6 +9,14 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "os",
+          "style": "plain",
+          "foreground": "#FF00FF",
+          "properties": {
+            "display_distro_name": true
+          }
+        },
+        {
           "type": "language",
           "style": "plain",
           "foreground": "#FF00FF",
@@ -45,9 +53,6 @@
           "type": "executiontime",
           "style": "plain",
           "foreground": "#00FFFF",
-          "properties": {
-            "threshold": 0
-          }
         },
         {
           "type": "time",
