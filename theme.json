@@ -9,12 +9,11 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "python",
+          "type": "language",
           "style": "plain",
           "foreground": "#FF00FF",
           "properties": {
-            "display_mode": "always",
-            "prefix": " \uE235 "
+            "display_mode": "always"
           }
         },
         {
