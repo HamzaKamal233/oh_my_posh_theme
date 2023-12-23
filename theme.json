@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
       "alignment": "left",
@@ -61,7 +60,7 @@
       "segments": [
         {
           "foreground": "#ffafd2",
-          "leading_diamond": "<#00c7fc> \ue285 </><#ffafd2>{</>",
+          "leading_diamond": "<#00c7fc> \ue285 </><#ffafd2></>",
           "properties": {
             "folder_icon": ">",
             "folder_separator_icon": " \uebcb ",
@@ -70,7 +69,7 @@
           },
           "style": "diamond",
           "template": " \ue5ff {{ .Path }} ",
-          "trailing_diamond": "<#ffafd2>}</>",
+          "trailing_diamond": "<#ffafd2></>",
           "type": "path"
         },
         {
