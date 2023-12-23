@@ -46,7 +46,6 @@
           "style": "plain",
           "foreground": "#00FFFF",
           "properties": {
-            "postfix": " ms",
             "threshold": 0
           }
         },
