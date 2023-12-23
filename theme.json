@@ -13,8 +13,7 @@
           "style": "plain",
           "foreground": "#FFD700",
           "properties": {
-            "style": "full",
-            "prefix": "",
+            "style": "full"
           }
         },
         {
