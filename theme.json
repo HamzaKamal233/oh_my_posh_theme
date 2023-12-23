@@ -1,82 +1,66 @@
 {
-  "final_space": false,
-  "console_title": false,
-  "console_title_style": "template",
-  "console_title_template": "{{ .Folder }} - {{ .Shell }}",
-  "blocks": [
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#FFD700",
-          "properties": {
-            "text": "{{if eq .VirtualEnv \"\"}}{{else}}🌐{{end}} "
-          }
-        },
-        {
-          "type": "path",
-          "style": "plain",
-          "foreground": "#FFD700",
-          "properties": {
-            "style": "full",
-            "prefix": ""
-          }
-        },
-        {
-          "type": "git",
-          "style": "ascii_logo",
-          "foreground": "#FF69B4",
-          "properties": {
-            "display_status": true,
-            "display_stash_count": true,
-            "display_upstream_icon": true,
-            "prefix": " 🌱 "
-          }
-        },
-        {
-          "type": "language",
-          "style": "ascii_logo",
-          "foreground": "#00FFFF",
-          "properties": {
-            "display_mode": "always",
-            "prefix": " 📝 "
-          }
-        }
-      ]
+  "blocks": {
+    "left": [
+      {
+        "type": "prompt",
+        "style": "plain"
+      },
+      {
+        "type": "git_branch",
+        "style": "icon",
+        "icon": ""
+      },
+      {
+        "type": "env_var",
+        "name": "VIRTUAL_ENV",
+        "style": "icon",
+        "icon": ""
+      },
+      {
+        "type": "time",
+        "style": "time",
+        "format": "HH:mm:ss"
+      }
+    ],
+    "right": [
+      {
+        "type": "cmd_duration",
+        "style": "plain",
+        "prefix": "took "
+      }
+    ]
+  },
+  "theme": {
+    "colors": {
+      "prompt": "#FF4081",
+      "git_clean": "#00E676",
+      "git_dirty": "#FFEB3B",
+      "env_var": "#2962FF",
+      "time": "#FF9100",
+      "cmd_duration": "#651FFF"
     },
-    {
-      "type": "prompt",
-      "alignment": "right",
-      "segments": [
-        {
-          "type": "dynamic_info",
-          "style": "plain",
-          "foreground": "#7FFF00",
-          "properties": {
-            "dynamic_text": "{{datetime \"15:04:05\"}} ⚡️"
-          }
-        }
-      ]
-    },
-    {
-      "type": "newline"
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#FFD700",
-          "properties": {
-            "text": ">> "
-          }
-        }
+    "styles": {
+      "plain": "{block}",
+      "icon": "{icon} {context} ",
+      "time": "🕒 {time} "
+    }
+  },
+  "presets": {
+    "default": {
+      "left": [
+        "prompt",
+        "git_branch",
+        "env_var",
+        "time"
+      ],
+      "right": [
+        "cmd_duration"
       ]
     }
-  ]
+  },
+  "components": {
+    "prompt": "\\[\\e[38;5;198m\\]\\W\\[\\e[m\\]",
+    "icon": "\\[\\e[38;5;82m\\]{icon}\\[\\e[m\\]\\[\\e[38;5;15m\\] {context}\\[\\e[m\\]",
+    "time": "\\[\\e[38;5;220m\\]{time}\\[\\e[m\\]"
+  }
 }
